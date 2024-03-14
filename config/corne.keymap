@@ -224,19 +224,19 @@
 
         Umlaute_klein {
             bindings = <
-&trans  &trans     &trans  &trans      &trans  &trans    &trans  &trans  &Umlaut_u  &trans  &trans     &trans
-&trans  &Umlaut_a  &trans  &Umlaut_sz  &trans  &trans    &trans  &trans  &trans     &trans  &Umlaut_O  &trans
-&trans  &trans     &trans  &trans      &trans  &trans    &trans  &trans  &trans     &trans  &trans     &trans
-                           &trans      &trans  &trans    &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &Umlaut_u  &trans  &trans     &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans     &trans  &Umlaut_O  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans     &trans  &trans     &trans
+                        &trans  &trans  &trans    &trans  &trans  &trans
             >;
         };
 
         Umlaute_gross {
             bindings = <
-&trans  &trans     &trans  &trans      &trans  &trans    &trans  &trans  &Umlaut_U  &trans  &trans     &trans
-&trans  &Umlaut_A  &trans  &Umlaut_sz  &trans  &trans    &trans  &trans  &trans     &trans  &Umlaut_O  &trans
-&trans  &trans     &trans  &trans      &trans  &trans    &trans  &trans  &trans     &trans  &trans     &trans
-                           &trans      &trans  &trans    &trans  &trans  &trans
+&trans  &trans     &trans  &trans  &trans  &trans    &trans  &trans  &Umlaut_U  &trans  &trans     &trans
+&trans  &Umlaut_A  &trans  &trans  &trans  &trans    &trans  &trans  &trans     &trans  &Umlaut_O  &trans
+&trans  &trans     &trans  &trans  &trans  &trans    &trans  &trans  &trans     &trans  &trans     &trans
+                           &trans  &trans  &trans    &trans  &trans  &trans
             >;
         };
 
