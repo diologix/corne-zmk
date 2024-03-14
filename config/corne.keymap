@@ -70,7 +70,7 @@
         };
 
         Umlaute_gross {
-            bindings = <&to 0>;
+            bindings = <&to 7>;
             key-positions = <36 41>;
         };
     };
