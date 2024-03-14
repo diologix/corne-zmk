@@ -182,10 +182,10 @@
             //                   |  (  |  )  |  _  | # | HELD |       |       |
 
             bindings = <
-&trans  &kp LG(CARET)  &kp EXCLAMATION  &kp DOUBLE_QUOTES  &kp SQT            &kp RBRC             &trans                &trans                 &trans         &trans         &trans         &trans
-&trans  &kp TILDE      &kp DLLR         &kp PRCNT          &kp LG(AMPERSAND)  &kp PIPE             &trans                &kp LSHFT              &kp LCTRL      &kp LEFT_META  &kp LEFT_ALT   &trans
-&trans  &kp AT_SIGN    &kp LEFT_BRACE   &kp RIGHT_BRACE    &kp LEFT_BRACKET   &kp RIGHT_BRACKET    &trans                &trans                 &trans         &kp RALT       &kp RIGHT_ALT  &trans
-                                        &trans             &trans             &trans               &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp BACKSLASH
+&trans  &trans       &kp EXCLAMATION  &kp DOUBLE_QUOTES  &kp SQT           &kp RBRC             &trans                &trans                 &trans         &trans         &trans         &trans
+&trans  &kp TILDE    &kp DLLR         &kp PRCNT          &trans            &kp PIPE             &trans                &kp LSHFT              &kp LCTRL      &kp LEFT_META  &kp LEFT_ALT   &trans
+&trans  &kp AT_SIGN  &kp LEFT_BRACE   &kp RIGHT_BRACE    &kp LEFT_BRACKET  &kp RIGHT_BRACKET    &trans                &trans                 &trans         &kp RALT       &kp RIGHT_ALT  &trans
+                                      &trans             &trans            &trans               &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp BACKSLASH
             >;
         };
 
