@@ -2,7 +2,6 @@
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/ext_power.h>
 #include <dt-bindings/zmk/keys.h>
-#include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/outputs.h>
 
 // Layer Definitions
@@ -72,57 +71,6 @@
         Umlaute_gross {
             bindings = <&to 0>;
             key-positions = <36 41>;
-        };
-    };
-
-    macros {
-        Umlaut_a: Umlaut_a {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kt LEFT_ALT &kp KP_NUMBER_1 &kp KP_NUMBER_3 &kp KP_NUMBER_2 &kt LEFT_ALT>;
-            label = "UMLAUT_A";
-        };
-
-        Umlaut_o: Umlaut_o {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kt LEFT_ALT &kp KP_NUMBER_1 &kp KP_NUMBER_4 &kp KP_NUMBER_8 &kt LEFT_ALT>;
-            label = "UMLAUT_O";
-        };
-
-        Umlaut_u: Umlaut_u {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kt LEFT_ALT &kp KP_NUMBER_1 &kp KP_NUMBER_2 &kp KP_NUMBER_9 &kt LEFT_ALT>;
-            label = "UMLAUT_U";
-        };
-
-        Umlaut_A: Umlaut_A {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kt LEFT_ALT &kp KP_NUMBER_1 &kp KP_NUMBER_4 &kp KP_NUMBER_2 &kt LEFT_ALT>;
-            label = "UMLAUT_A";
-        };
-
-        Umlaut_O: Umlaut_O {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kt LEFT_ALT &kp KP_NUMBER_1 &kp KP_NUMBER_5 &kp KP_NUMBER_3 &kt LEFT_ALT>;
-            label = "UMLAUT_O";
-        };
-
-        Umlaut_U: Umlaut_U {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kt LEFT_ALT &kp KP_NUMBER_1 &kp KP_NUMBER_5 &kp KP_NUMBER_4 &kt LEFT_ALT>;
-            label = "UMLAUT_U";
-        };
-
-        Umlaut_sz: Umlaut_sz {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kt LEFT_ALT &kp KP_NUMBER_2 &kp KP_NUMBER_2 &kp KP_NUMBER_5 &kt LEFT_ALT>;
-            label = "UMLAUT_SZ";
         };
     };
 
