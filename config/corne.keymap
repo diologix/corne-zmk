@@ -98,7 +98,7 @@
 &trans  &kp Q  &kp W  &kp F         &kp P            &kp B          &kp J        &kp L           &kp U      &kp Y       &kp SEMICOLON  &trans
 &trans  &kp A  &kp R  &kp S         &kp T            &kp G          &kp M        &kp N           &kp E      &kp I       &kp O          &trans
 &trans  &kp Z  &kp X  &kp C         &kp D            &kp V          &kp K        &kp H           &kp COMMA  &kp PERIOD  &kp FSLH       &trans
-                      &lt 3 DELETE  &lt 4 BACKSPACE  &lt 5 SPACE    &lt 6 ENTER  &kp LEFT_SHIFT  &lt 1 TAB
+                      &lt 3 DELETE  &lt 4 BACKSPACE  &lt 5 SPACE    &lt 2 ENTER  &kp LEFT_SHIFT  &lt 1 TAB
             >;
         };
 
@@ -126,7 +126,7 @@
 
             bindings = <
 &trans  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &bootloader   &ext_power EP_OFF  &kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_INC  &ext_power EP_ON  &trans
-&trans  &kp LGUI      &kp LALT      &kp LCTRL     &kp LSHFT     &bt BT_CLR      &sys_reset    &kp K_PREV         &kp C_VOLUME_DOWN     &kp C_VOLUME_UP       &kp K_NEXT        &trans
+&trans  &kp LGUI      &kp LALT      &kp LCTRL     &kp LSHFT     &bt BT_CLR      &kp C_PREV    &kp K_PREV         &kp C_VOLUME_DOWN     &kp C_VOLUME_UP       &kp K_NEXT        &trans
 &trans  &trans        &to 0         &to 0         &to 0         &trans          &out OUT_TOG  &kp K_MUTE         &kp K_PLAY_PAUSE      &trans                &trans            &trans
                                     &trans        &trans        &trans          &trans        &trans             &trans
             >;
