@@ -90,10 +90,10 @@
             //                            | ESC/MEDIA | SPACE/NAV | TAB/MOUSE | # | ENTER/SYM | BSPC/NUM | DEL/FN  |
 
             bindings = <
-&trans  &kp Q  &kp W  &kp F         &kp P            &kp B          &kp J        &kp L           &kp U      &kp Y       &kp SEMICOLON  &trans
-&trans  &kp A  &kp R  &kp S         &kp T            &kp G          &kp M        &kp N           &kp E      &kp I       &kp O          &trans
-&trans  &kp Z  &kp X  &kp C         &kp D            &kp V          &kp K        &kp H           &kp COMMA  &kp PERIOD  &kp FSLH       &trans
-                      &lt 3 DELETE  &lt 4 BACKSPACE  &lt 5 SPACE    &lt 2 ENTER  &kp LEFT_SHIFT  &lt 1 TAB
+&trans  &kp Q  &kp W  &kp F         &kp P        &kp B          &kp J            &kp L           &kp U      &kp Y       &kp SEMICOLON  &trans
+&trans  &kp A  &kp R  &kp S         &kp T        &kp G          &kp M            &kp N           &kp E      &kp I       &kp O          &trans
+&trans  &kp Z  &kp X  &kp C         &kp D        &kp V          &kp K            &kp H           &kp COMMA  &kp PERIOD  &kp FSLH       &trans
+                      &lt 3 DELETE  &lt 4 SPACE  &lt 5 ENTER    &lt 2 BACKSPACE  &kp LEFT_SHIFT  &lt 1 TAB
             >;
         };
 
