@@ -3,7 +3,6 @@
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/ext_power.h>
 #include <dt-bindings/zmk/keys.h>
-#include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/outputs.h>
 
 // Layer Definitions
@@ -65,21 +64,16 @@
             key-positions = <41 38>;
         };
 
-        Umlaute_klein {
-            bindings = <&to 0>;
-            key-positions = <36 40>;
-        };
-
-        Umlaute_gross {
-            bindings = <&to 0>;
-            key-positions = <36 41>;
+        Backspace {
+            bindings = <&kp BACKSPACE>;
+            key-positions = <40 37>;
         };
     };
 
     keymap {
         compatible = "zmk,keymap";
 
-        colemak-dh-de {
+        L0-colemak-dh-de {
             // -----------------------------------------------------------------------------------------------------------------------------
             // |        |   Q    |   W    |     F     |     P     |     B     | # |     J     |    L     |    U    |    Y   |   '    |     |
             // | LAYERS | A/LGUI | R/LALT |  S/LCTRL  |  T/LSHFT  |     G     | # |     M     | N/LSHFT  | E/LCTRL | I/LALT | O/LGUI |     |
@@ -90,11 +84,11 @@
 &trans  &kp Q  &kp W  &kp F         &kp P            &kp B          &kp J        &kp L           &kp U      &kp Y       &kp SEMICOLON  &trans
 &trans  &kp A  &kp R  &kp S         &kp T            &kp G          &kp M        &kp N           &kp E      &kp I       &kp O          &trans
 &trans  &kp Z  &kp X  &kp C         &kp D            &kp V          &kp K        &kp H           &kp COMMA  &kp PERIOD  &kp FSLH       &trans
-                      &lt 3 DELETE  &lt 4 BACKSPACE  &lt 5 SPACE    &lt 6 ENTER  &kt LEFT_SHIFT  &lt 1 TAB
+                      &lt 3 DELETE  &lt 4 BACKSPACE  &lt 5 SPACE    &lt 6 ENTER  &kp LEFT_SHIFT  &lt 1 TAB
             >;
         };
 
-        nav-function {
+        L1-nav-function {
             // -------------------------------------------------------------------------------------------
             // |     |      |      |       |       |     | # | REDO  | CUT  | COPY | PASTE | UNDO  |     |
             // |     | LGUI | LALT | LCTRL | LSHFT |     | # | CAPS  | LEFT | DOWN | UP    | RIGHT |     |
@@ -109,7 +103,7 @@
             >;
         };
 
-        media {
+        L2-media {
             // -----------------------------------------------------------------------------------------------------
             // |     |      |      |       |       |      | # | BOOTLOAD | EP_OFF | BR_D   | BR_U   | EP_ON  |     |
             // |     | LGUI | LALT | LCTRL | LSHFT |      | # | RESET    | PREV   | VOL_D  | VOL_U  | NEXT   |     |
@@ -124,7 +118,7 @@
             >;
         };
 
-        symbols {
+        L3-symbols {
             // ------------------------------------------------------------------------------------
             // |     |  {  |  &  |  *  |  (  |  }  | # |      |       |       |      |      |     |
             // |     |  :  |  $  |  %  |  ^  |  +  | # |      | LSHFT | LCTRL | LALT | LGUI |     |
@@ -134,12 +128,12 @@
             bindings = <
 &trans  &trans       &kp EXCLAMATION  &kp DOUBLE_QUOTES  &kp SQT           &kp RBRC             &trans                &trans                 &trans         &trans         &trans         &trans
 &trans  &kp TILDE    &kp DLLR         &kp PRCNT          &trans            &kp PIPE             &trans                &kp LSHFT              &kp LCTRL      &kp LEFT_META  &kp LEFT_ALT   &trans
-&trans  &kp AT_SIGN  &kp LEFT_BRACE   &kp RIGHT_BRACE    &kp LEFT_BRACKET  &kp RIGHT_BRACKET    &trans                &trans                 &trans         &kp RALT       &kp RIGHT_ALT  &trans
-                                      &trans             &trans            &trans               &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp BACKSLASH
+&trans  &kp AT_SIGN  &kp LEFT_BRACE   &kp RIGHT_BRACE    &kp LEFT_BRACKET  &kp RIGHT_BRACKET    &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp BACKSLASH  &kp RALT       &kp RIGHT_ALT  &trans
+                                      &trans             &trans            &trans               &trans                &trans                 &trans
             >;
         };
 
-        Functions {
+        L4-Functions {
             bindings = <
 &trans  &kp F10  &kp F1  &kp F2  &kp F3  &trans    &trans  &trans          &trans            &trans         &trans         &trans
 &trans  &kp F11  &kp F4  &kp F5  &kp F6  &trans    &trans  &kp LEFT_SHIFT  &kp LEFT_CONTROL  &kp LEFT_META  &kp LEFT_ALT   &trans
@@ -148,7 +142,7 @@
             >;
         };
 
-        numbers {
+        L5-numbers {
             // -----------------------------------------------------------------------------------
             // |     |  [  |  7  |  8  |  9  |  ]  | # |     |       |       |      |      |     |
             // |     |  ;  |  4  |  5  |  6  |  =  | # |     | LSHFT | LCTRL | LALT | LGUI |     |
@@ -163,7 +157,7 @@
             >;
         };
 
-        Applications {
+        L6-Applications {
             bindings = <
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
