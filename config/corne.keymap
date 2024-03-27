@@ -64,11 +64,6 @@
             key-positions = <41 38>;
         };
 
-        Backspace {
-            bindings = <&kp BACKSPACE>;
-            key-positions = <40 37>;
-        };
-
         ComboAffengriff {
             bindings = <&Affengriff>;
             key-positions = <14 15 16 19 20 21>;
@@ -152,7 +147,7 @@
 &trans  &kp F10  &kp F1  &kp F2  &kp F3  &trans    &trans  &trans          &trans            &trans         &trans         &trans
 &trans  &kp F11  &kp F4  &kp F5  &kp F6  &trans    &trans  &kp LEFT_SHIFT  &kp LEFT_CONTROL  &kp LEFT_META  &kp LEFT_ALT   &trans
 &trans  &kp F12  &kp F7  &kp F8  &kp F9  &trans    &trans  &trans          &trans            &trans         &kp RIGHT_ALT  &trans
-                         &trans  &trans  &trans    &trans  &trans          &trans
+                         &trans  &trans  &trans    &trans  &kp BACKSPACE   &trans
             >;
         };
 
