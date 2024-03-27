@@ -68,6 +68,20 @@
             bindings = <&kp BACKSPACE>;
             key-positions = <40 37>;
         };
+
+        ComboAffengriff {
+            bindings = <&Affengriff>;
+            key-positions = <14 15 16 19 20 21>;
+        };
+    };
+
+    macros {
+        Affengriff: Affengriff {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LEFT_CONTROL &kp LEFT_ALT &kp DELETE>;
+            label = "AFFENGRIFF";
+        };
     };
 
     keymap {
