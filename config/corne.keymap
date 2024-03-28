@@ -65,7 +65,7 @@
         };
 
         ComboAffengriff {
-            bindings = <&Affengriff>;
+            bindings = <&kp LC(LA(DEL))>;
             key-positions = <14 15 16 19 20 21>;
         };
 
@@ -102,15 +102,6 @@
         sticky-layer {
             bindings = <&sl 7>;
             key-positions = <36 15>;
-        };
-    };
-
-    macros {
-        Affengriff: Affengriff {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp LEFT_CONTROL &kp LEFT_ALT &kp DELETE>;
-            label = "AFFENGRIFF";
         };
     };
 
