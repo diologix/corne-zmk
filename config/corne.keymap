@@ -98,6 +98,11 @@
             bindings = <&kp LC(LS(V))>;
             key-positions = <36 29>;
         };
+
+        sticky-layer {
+            bindings = <&sl 7>;
+            key-positions = <36 15>;
+        };
     };
 
     macros {
@@ -202,6 +207,15 @@
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
                         &trans  &trans  &trans    &trans  &trans  &trans
+            >;
+        };
+
+        L7-Control {
+            bindings = <
+&trans  &trans  &trans  &trans            &trans         &trans          &trans            &trans         &trans         &trans  &trans  &trans
+&trans  &trans  &trans  &trans            &trans         &trans          &trans            &trans         &trans         &trans  &trans  &trans
+&trans  &trans  &trans  &trans            &trans         &trans          &trans            &trans         &trans         &trans  &trans  &trans
+                        &kp LEFT_CONTROL  &kp LEFT_META  &kp LEFT_ALT    &kp LEFT_CONTROL  &kp LEFT_META  &kp RIGHT_ALT
             >;
         };
     };
