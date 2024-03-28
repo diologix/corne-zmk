@@ -23,6 +23,11 @@
 #define SYM 9
 #define FN 10
 
+#define ZMK_UNICODE_SINGLE(name, L0, L1, L2, L3) \
+    UC_MACRO(name ## _lower, &kp L0 &kp L1 &kp L2 &kp L3) \
+    UC_MODMORPH(name, &name ## _lower, &none)
+
+
 ZMK_UNICODE_SINGLE(euro_sign, N2, N0, A, C)  // €
 
 
