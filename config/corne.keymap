@@ -65,7 +65,7 @@
         };
 
         ComboAffengriff {
-            bindings = <&kp LC(LA(DEL))>;
+            bindings = <&kp LC(LA(DELETE))>;
             key-positions = <14 15 16 19 20 21>;
         };
 
@@ -175,10 +175,10 @@
 
         L4-Functions {
             bindings = <
-&trans  &kp F10  &kp F1  &kp F2  &kp F3  &trans    &trans  &trans          &trans            &trans         &trans         &trans
-&trans  &kp F11  &kp F4  &kp F5  &kp F6  &trans    &trans  &kp LEFT_SHIFT  &kp LEFT_CONTROL  &kp LEFT_META  &kp LEFT_ALT   &trans
-&trans  &kp F12  &kp F7  &kp F8  &kp F9  &trans    &trans  &trans          &trans            &trans         &kp RIGHT_ALT  &trans
-                         &trans  &trans  &trans    &trans  &kp BACKSPACE   &trans
+&trans  &kp F10  &kp F1  &kp F2  &kp F3  &kp LSHFT    &trans  &trans          &trans            &trans         &trans         &trans
+&trans  &kp F11  &kp F4  &kp F5  &kp F6  &kp LCTRL    &trans  &kp LEFT_SHIFT  &kp LEFT_CONTROL  &kp LEFT_META  &kp LEFT_ALT   &trans
+&trans  &kp F12  &kp F7  &kp F8  &kp F9  &kp LALT     &trans  &trans          &trans            &trans         &kp RIGHT_ALT  &trans
+                         &trans  &trans  &trans       &trans  &kp BACKSPACE   &trans
             >;
         };
 
@@ -190,10 +190,10 @@
             //                   |  .  |  0  |  -  | # |     | HELD  |       |
 
             bindings = <
-&trans  &kp N0        &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp PLUS     &trans  &trans     &trans     &trans         &trans        &trans
-&trans  &kp PERIOD    &kp N4        &kp N5        &kp N6        &kp MINUS    &trans  &kp LSHFT  &kp LCTRL  &kp LEFT_META  &kp LEFT_ALT  &trans
-&trans  &kp KP_COMMA  &kp N7        &kp N8        &kp N9        &kp EQUAL    &trans  &trans     &trans     &kp RALT       &trans        &trans
-                                    &trans        &trans        &trans       &trans  &trans     &trans
+&trans  &kp N0           &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp PLUS     &trans  &trans     &trans     &trans         &trans        &trans
+&trans  &kp KP_NUMBER_0  &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp MINUS    &trans  &kp LSHFT  &kp LCTRL  &kp LEFT_META  &kp LEFT_ALT  &trans
+&trans  &kp UNDER        &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp EQUAL    &trans  &trans     &trans     &kp RALT       &trans        &trans
+                                          &trans           &trans           &trans       &trans  &trans     &trans
             >;
         };
 
