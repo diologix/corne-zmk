@@ -183,34 +183,6 @@ ZMK_UNICODE_SINGLE(euro_sign, N2, N0, A, C)  // €
 
             label = "UMLAUT_UE";
         };
-
-        Umlaut_UE_gross: Umlaut_UE {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings =
-                <&macro_press>,
-                <&kp LALT>,
-                <&macro_tap>,
-                <&kp KP_NUMBER_1 &kp KP_NUMBER_5 &kp KP_NUMBER_4>,
-                <&macro_release>,
-                <&kp LALT>;
-
-            label = "UMLAUT_UE";
-        };
-
-        Umlaut_ss: Umlaut_ss {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings =
-                <&macro_press>,
-                <&kp LALT>,
-                <&macro_tap>,
-                <&kp KP_NUMBER_2 &kp KP_NUMBER_2 &kp KP_NUMBER_5>,
-                <&macro_release>,
-                <&kp LALT>;
-
-            label = "UMLAUT_SS";
-        };
     };
 
     keymap {
