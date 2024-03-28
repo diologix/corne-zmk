@@ -113,7 +113,7 @@
         };
 
         Umlaut-oe {
-            bindings = <&kp KP_N1>;
+            bindings = <&kp de_oe>;
             key-positions = <23 37>;
         };
     };
