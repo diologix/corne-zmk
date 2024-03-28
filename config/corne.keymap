@@ -165,8 +165,8 @@
             //                   |  (  |  )  |  _  | # | HELD |       |       |
 
             bindings = <
-&trans  &trans       &kp EXCLAMATION  &kp DOUBLE_QUOTES  &kp SQT           &kp RBRC             &trans                &trans                 &trans         &trans         &trans         &trans
-&trans  &kp TILDE    &kp DLLR         &kp PRCNT          &kp MINUS         &kp PIPE             &trans                &kp LSHFT              &kp LCTRL      &kp LEFT_META  &kp LEFT_ALT   &trans
+&trans  &trans       &kp EXCLAMATION  &kp DOUBLE_QUOTES  &kp SQT           &kp MINUS            &trans                &trans                 &trans         &trans         &trans         &trans
+&trans  &kp TILDE    &kp DLLR         &kp PRCNT          &kp CARET         &kp PIPE             &trans                &kp LSHFT              &kp LCTRL      &kp LEFT_META  &kp LEFT_ALT   &trans
 &trans  &kp AT_SIGN  &kp LEFT_BRACE   &kp RIGHT_BRACE    &kp LEFT_BRACKET  &kp RIGHT_BRACKET    &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp BACKSLASH  &kp RALT       &kp RIGHT_ALT  &trans
                                       &trans             &trans            &trans               &trans                &trans                 &trans
             >;
