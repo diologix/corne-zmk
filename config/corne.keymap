@@ -5,8 +5,8 @@
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/outputs.h>
-#include "../zmk-nodefree-config/helper.h"
-#include "../zmk-nodefree-config/international_chars/german.dtsi"
+//#include "../zmk-nodefree-config/helper.h"
+//#include "../zmk-nodefree-config/international_chars/german.dtsi"
 
 
 // Layer Definitions
@@ -22,6 +22,9 @@
 #define NUM 8
 #define SYM 9
 #define FN 10
+
+ZMK_UNICODE_SINGLE(euro_sign, N2, N0, A, C)  // €
+
 
 // Behavior configuration
 
@@ -227,7 +230,7 @@
         L7-Control {
             bindings = <
 &trans  &trans  &trans  &trans            &trans         &trans          &trans            &trans         &trans         &trans  &trans  &trans
-&trans  &trans  &trans  &trans            &trans         &trans          &trans            &trans         &trans         &trans  &trans  &trans
+&trans  &trans  &trans  &trans            &trans         &trans          &trans            &trans         &trans         &trans  &euro_sign  &trans
 &trans  &trans  &trans  &trans            &trans         &trans          &trans            &trans         &trans         &trans  &trans  &trans
                         &kp LEFT_CONTROL  &kp LEFT_META  &kp LEFT_ALT    &kp LEFT_CONTROL  &kp LEFT_META  &kp RIGHT_ALT
             >;
