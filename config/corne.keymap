@@ -127,7 +127,11 @@ ZMK_UNICODE_SINGLE(euro_sign, N2, N0, A, C)  // €
         Umlaut_oe: Umlaut_oe {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kt LEFT_ALT &kp KP_NUMBER_1 &kp KP_NUMBER_4 &kp KP_NUMBER_8 &kt LEFT_ALT>;
+            bindings
+                = <&macro_press &kp LALT>
+                , <&macro_tap &kp KP_NUMBER_1 &kp KP_NUMBER_4 &kp KP_NUMBER_8>
+                , <&macro_release &kp LALT>
+                ;
             label = "UMLAUT_OE";
         };
     };
