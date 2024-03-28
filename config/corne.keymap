@@ -106,23 +106,19 @@
             bindings = <&to 0>;
             key-positions = <3 2 4>;
         };
+
+        umlaut_ae {
+            bindings = <&Umlaut_ae>;
+            key-positions = <13 37>;
+        };
+
+        umlaut_ae_gross {
+            bindings = <&Umlaut_AE_gross>;
+            key-positions = <13 37 40>;
+        };
     };
 
     macros {
-        Umlaut_oe: Umlaut_oe {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings =
-                <&macro_press>,
-                <&kp LALT>,
-                <&macro_tap>,
-                <&kp KP_NUMBER_1 &kp KP_NUMBER_4 &kp KP_NUMBER_8>,
-                <&macro_release>,
-                <&kp LALT>;
-
-            label = "UMLAUT_OE";
-        };
-
         umlaut_OE_gross: umlaut_OE {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
