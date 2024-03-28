@@ -99,9 +99,14 @@
             key-positions = <36 29>;
         };
 
-        sticky-layer {
-            bindings = <&sl 7>;
+        control-layer {
+            bindings = <&to 7>;
             key-positions = <36 15>;
+        };
+
+        to-layer-0 {
+            bindings = <&to 0>;
+            key-positions = <3 2 4>;
         };
     };
 
