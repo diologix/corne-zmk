@@ -104,7 +104,7 @@ ZMK_UNICODE_SINGLE(euro_sign, N2, N0, A, C)  // €
 
         control-layer {
             bindings = <&to 7>;
-            key-positions = <36 15>;
+            key-positions = <36 37>;
         };
 
         to-layer-0 {
@@ -114,7 +114,37 @@ ZMK_UNICODE_SINGLE(euro_sign, N2, N0, A, C)  // €
 
         Umlaut-oe {
             bindings = <&Umlaut_oe>;
-            key-positions = <23 37>;
+            key-positions = <37 22>;
+        };
+
+        Umlaut_OE {
+            bindings = <&umlaut_OE>;
+            key-positions = <37 22 40>;
+        };
+
+        Umlaut_ae {
+            bindings = <&Umlaut_ae>;
+            key-positions = <37 13>;
+        };
+
+        Umlaut_AE {
+            bindings = <&Umlaut_AE>;
+            key-positions = <37 13 40>;
+        };
+
+        Umlaut_ue {
+            bindings = <&Umlaut_ue>;
+            key-positions = <37 8>;
+        };
+
+        Umlaut_UE {
+            bindings = <&Umlaut_UE>;
+            key-positions = <8 37 40>;
+        };
+
+        Umlaut_ss {
+            bindings = <&Umlaut_ss>;
+            key-positions = <37 15>;
         };
     };
 
@@ -131,6 +161,90 @@ ZMK_UNICODE_SINGLE(euro_sign, N2, N0, A, C)  // €
                 <&kp LALT>;
 
             label = "UMLAUT_OE";
+        };
+
+        umlaut_OE: umlaut_OE {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LALT>,
+                <&macro_tap>,
+                <&kp KP_NUMBER_1 &kp KP_NUMBER_5 &kp KP_NUMBER_3>,
+                <&macro_release>,
+                <&kp LALT>;
+
+            label = "UMLAUT_OE";
+        };
+
+        Umlaut_ae: Umlaut_ae {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LALT>,
+                <&macro_tap>,
+                <&kp KP_NUMBER_1 &kp KP_NUMBER_3 &kp KP_NUMBER_2>,
+                <&macro_release>,
+                <&kp LALT>;
+
+            label = "UMLAUT_AE";
+        };
+
+        Umlaut_AE: Umlaut_AE {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LALT>,
+                <&macro_tap>,
+                <&kp KP_NUMBER_1 &kp KP_NUMBER_4 &kp KP_NUMBER_2>,
+                <&macro_release>,
+                <&kp LALT>;
+
+            label = "UMLAUT_AE";
+        };
+
+        Umlaut_ue: Umlaut_ue {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LALT>,
+                <&macro_tap>,
+                <&kp KP_NUMBER_1 &kp KP_NUMBER_2 &kp KP_NUMBER_9>,
+                <&macro_release>,
+                <&kp LALT>;
+
+            label = "UMLAUT_UE";
+        };
+
+        Umlaut_UE: Umlaut_UE {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LALT>,
+                <&macro_tap>,
+                <&kp KP_NUMBER_1 &kp KP_NUMBER_5 &kp KP_NUMBER_4>,
+                <&macro_release>,
+                <&kp LALT>;
+
+            label = "UMLAUT_UE";
+        };
+
+        Umlaut_ss: Umlaut_ss {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LALT>,
+                <&macro_tap>,
+                <&kp KP_NUMBER_2 &kp KP_NUMBER_2 &kp KP_NUMBER_5>,
+                <&macro_release>,
+                <&kp LALT>;
+
+            label = "UMLAUT_SS";
         };
     };
 
