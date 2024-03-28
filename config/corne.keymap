@@ -302,9 +302,9 @@
 
         L7-Control {
             bindings = <
-&trans  &trans  &trans  &trans            &trans         &trans          &trans            &trans         &trans         &trans  &trans      &trans
-&trans  &trans  &trans  &trans            &trans         &trans          &trans            &trans         &trans         &trans  &Umlaut_oe  &trans
-&trans  &trans  &trans  &trans            &trans         &trans          &trans            &trans         &trans         &trans  &trans      &trans
+&trans  &trans  &trans  &trans            &trans         &trans          &trans            &trans         &trans         &trans  &trans  &trans
+&trans  &trans  &trans  &trans            &trans         &trans          &trans            &trans         &trans         &trans  &trans  &trans
+&trans  &trans  &trans  &trans            &trans         &trans          &trans            &trans         &trans         &trans  &trans  &trans
                         &kp LEFT_CONTROL  &kp LEFT_META  &kp LEFT_ALT    &kp LEFT_CONTROL  &kp LEFT_META  &kp RIGHT_ALT
             >;
         };
