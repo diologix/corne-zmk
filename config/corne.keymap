@@ -108,22 +108,6 @@
         };
     };
 
-    macros {
-        umlaut_OE_gross: umlaut_OE {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings =
-                <&macro_press>,
-                <&kp LALT>,
-                <&macro_tap>,
-                <&kp KP_NUMBER_1 &kp KP_NUMBER_5 &kp KP_NUMBER_3>,
-                <&macro_release>,
-                <&kp LALT>;
-
-            label = "UMLAUT_OE";
-        };
-    };
-
     keymap {
         compatible = "zmk,keymap";
 
