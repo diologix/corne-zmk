@@ -127,19 +127,9 @@ ZMK_UNICODE_SINGLE(euro_sign, N2, N0, A, C)  // €
             key-positions = <37 13>;
         };
 
-        Umlaut_AE {
-            bindings = <&Umlaut_AE>;
-            key-positions = <37 13 40>;
-        };
-
         Umlaut_ue {
             bindings = <&Umlaut_ue>;
             key-positions = <37 8>;
-        };
-
-        Umlaut_UE {
-            bindings = <&Umlaut_UE>;
-            key-positions = <8 37 40>;
         };
     };
 
